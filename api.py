@@ -147,7 +147,7 @@ def create_workflow(request: Txt2ImgRequest) -> dict:
     workflow["10"]["inputs"]["steps"] = request.steps
     workflow["10"]["inputs"]["cfg"] = request.cfg_scale
     workflow["10"]["inputs"]["sampler_name"] = request.sampler_name.lower()
-    workflow["10"]["inputs"]["scheduler"] = request.scheduler
+    workflow["10"]["inputs"]["scheduler"] = "normal"
     workflow["10"]["inputs"]["end_at_step"] = request.steps
 
     if request.seed == -1:

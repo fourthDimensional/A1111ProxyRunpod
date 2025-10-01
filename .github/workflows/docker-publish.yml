@@ -30,4 +30,4 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: ghcr.io/${{ github.repository_owner }}/a-proxy-runpod:latest
+        tags: ghcr.io/fourthdimensional/a-proxy-runpod:latest
